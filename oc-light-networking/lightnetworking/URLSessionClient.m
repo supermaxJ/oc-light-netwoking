@@ -23,7 +23,7 @@
 }
 
 - (void)send:(id<Request>)request handler:(void (^)(id<Response>))handler {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",
                                           self.host, request.path]];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     urlRequest.HTTPMethod = [self methodName:request.method];

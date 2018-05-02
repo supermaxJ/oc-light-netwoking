@@ -14,6 +14,8 @@
 		D4D156982099450000A83CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D156962099450000A83CA9 /* LaunchScreen.storyboard */; };
 		D4D1569B2099450000A83CA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D1569A2099450000A83CA9 /* main.m */; };
 		D4D156B0209949E500A83CA9 /* URLSessionClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D156AF209949E500A83CA9 /* URLSessionClient.m */; };
+		D4D156B420994FF500A83CA9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D156B320994FF500A83CA9 /* User.m */; };
+		D4D156B72099520100A83CA9 /* UserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D156B62099520100A83CA9 /* UserRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		D4D156AB209948C300A83CA9 /* Response.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		D4D156AE209949E500A83CA9 /* URLSessionClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSessionClient.h; sourceTree = "<group>"; };
 		D4D156AF209949E500A83CA9 /* URLSessionClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLSessionClient.m; sourceTree = "<group>"; };
+		D4D156B220994FF500A83CA9 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D4D156B320994FF500A83CA9 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D4D156B52099520100A83CA9 /* UserRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserRequest.h; sourceTree = "<group>"; };
+		D4D156B62099520100A83CA9 /* UserRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		D4D1568A209944FA00A83CA9 /* oc-light-networking */ = {
 			isa = PBXGroup;
 			children = (
+				D4D156B120994FD300A83CA9 /* demo */,
 				D4D156A12099453400A83CA9 /* lightnetworking */,
 				D4D1568B209944FA00A83CA9 /* AppDelegate.h */,
 				D4D1568C209944FA00A83CA9 /* AppDelegate.m */,
@@ -88,6 +95,17 @@
 				D4D156AF209949E500A83CA9 /* URLSessionClient.m */,
 			);
 			path = lightnetworking;
+			sourceTree = "<group>";
+		};
+		D4D156B120994FD300A83CA9 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				D4D156B220994FF500A83CA9 /* User.h */,
+				D4D156B320994FF500A83CA9 /* User.m */,
+				D4D156B52099520100A83CA9 /* UserRequest.h */,
+				D4D156B62099520100A83CA9 /* UserRequest.m */,
+			);
+			path = demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D156B420994FF500A83CA9 /* User.m in Sources */,
 				D4D15690209944FA00A83CA9 /* ViewController.m in Sources */,
+				D4D156B72099520100A83CA9 /* UserRequest.m in Sources */,
 				D4D156B0209949E500A83CA9 /* URLSessionClient.m in Sources */,
 				D4D1569B2099450000A83CA9 /* main.m in Sources */,
 				D4D1568D209944FA00A83CA9 /* AppDelegate.m in Sources */,

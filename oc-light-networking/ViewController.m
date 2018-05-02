@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "URLSessionClient.h"
+#import "UserRequest.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    UserRequest *request = [UserRequest new];
+    request.name = @"snakejay";
+    [[URLSessionClient sharedInstance]
+     send:request handler:^(User *response) {
+         if (response) {
+             NSLog(@"%@ from %@",
+                   response.message,
+                   response.name);
+         }
+     }];
 }
 
 

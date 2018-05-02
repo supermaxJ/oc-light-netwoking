@@ -20,6 +20,6 @@ typedef NS_ENUM(NSUInteger, HTTPMethod) {
 @property (nonatomic, assign, readonly) HTTPMethod method;
 @property (nonatomic, copy, readonly) NSDictionary *parameter;
 
-@property (nonatomic) id<Response> Response;
+@property (nonatomic) Class<Response> Response;
 
 @end
